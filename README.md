@@ -8,6 +8,7 @@ The objective of the analysis was to better understand how retail demand fluctua
 
 
 
+
 ### Project Links
 
 Full R code rmd file can be found [here](https://github.com/darianmiranda/Walmart-Retail-Sales-Forecast/blob/main/predictionportfolio.Rmd)
