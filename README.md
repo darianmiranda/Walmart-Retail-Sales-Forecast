@@ -1,47 +1,91 @@
 # Walmart Retail Sales Forecasting
 
-## 1. Project Overview
+## Project Overview
 
-Retail forecasting is a critical component of large-scale retail operations because inaccurate demand planning can lead to inventory shortages, excess storage costs, inefficient staffing, and lost revenue opportunities. This project focused on forecasting Walmart retail sales using historical store-level transaction data in R to better understand purchasing behavior and future demand trends.
+Walmart operates thousands of retail locations across the United States, making accurate sales forecasting critical for efficient operational planning. This project focused on forecasting retail sales at the store-department level using historical transaction and regional shopping pattern data.
 
-The goal of the analysis was to explore how predictive forecasting models could support operational planning and improve decision-making across retail locations. By analyzing sales trends, seasonal patterns, and store-level variation, the project demonstrates how data-driven forecasting can help retailers improve efficiency and better prepare for fluctuations in consumer demand.
+The objective of the analysis was to better understand how retail demand fluctuates across time and departments in order to support operational decision making. Accurate forecasting can help retailers anticipate periods of increased or decreased demand, improving inventory allocation, staffing efficiency, pricing strategy, and overall customer experience.
 
----
 
-## 2. Methodology
 
-The analysis was conducted using historical Walmart sales data containing store-level and time-based purchasing information. Data preparation and exploratory analysis were performed in R to identify sales trends, seasonal behavior, and potential forecasting patterns.
+### Project Links
 
-Multiple forecasting approaches were evaluated and compared using forecast accuracy metrics such as WAPE and related performance measures. The project focused on identifying models capable of capturing seasonal demand fluctuations and store-level variability while maintaining strong predictive performance.
+Full R code Rmd file can be found [here](https://github.com/darianmiranda/Walmart-Retail-Sales-Forecast/blob/main/predictionportfolio.Rmd)
 
-Visualizations were used throughout the analysis to evaluate sales trends, compare model outputs, and assess forecast behavior over time.
+Full R code html file can be found [here](https://github.com/darianmiranda/Walmart-Retail-Sales-Forecast/blob/main/predictionportfolio.html)
 
----
-
-## 3. Findings
-
-The analysis identified strong seasonal demand patterns across multiple time periods, particularly during holiday and promotional windows where sales activity increased substantially.
-
-🚨 Key findings placeholder:
-
-* Best-performing forecasting model achieved a WAPE of [INSERT VALUE]
-* Forecast accuracy improved relative to baseline forecasting methods
-* Sales patterns demonstrated significant seasonal variability across time periods and store locations
-
-The results highlight how forecasting models can help retailers anticipate demand fluctuations more effectively and reduce uncertainty in operational planning.
 
 ---
 
-## 4. Recommendations
+## Methodology
 
-Based on the findings, retailers could use forecasting systems like these to improve operational efficiency by proactively adjusting inventory levels, staffing allocation, and supply chain planning in anticipation of demand changes.
+The analysis was conducted using historical Walmart store and department-level sales data obtained. The dataset included time based retail sales observations across multiple store locations and departments.
 
-Potential business applications include:
+The forecasting workflow includes:
 
-* Improving product availability during seasonal demand spikes
-* Reducing inventory waste and overstocking costs
-* Supporting more efficient staffing and labor planning
-* Enhancing promotional and supply chain decision-making
-* Using forecasting insights to support long-term operational strategy
+* Feature engineering
+* Time aware train/test splitting
+* Forecast accuracy evaluation using WAPE (Weighted Absolute Percentage Error)
 
-For large retailers operating at scale, even modest forecasting improvements can translate into meaningful cost savings and revenue gains.
+To maintain computational efficiency on a local machine, lagged test features were precomputed using only historically available information and train derived baselines. This approach approximates one step ahead forecasting behavior while avoiding information leakage.
+
+While the workflow captures forecasting structure, a fully recursive multi step forecasting simulation would sequentially recompute lagged variables using prior model predictions at each future step. This limitation reflects a tradeoff between computational efficiency and full production style forecasting.
+
+
+---
+
+## Findings
+
+The final forecasting model achieved approximately <strong>8.4% WAPE</strong> on the test dataset, demonstrating strong predictive performance on unseen future sales observations.
+
+Key findings from the analysis included:
+
+* Certain periods of the year showed noticeably lower operational demand, particularly during late April, late July, and mid to late September
+* Demand increased sharply before major US holidays, suggesting strong seasonal or event driven purchasing behavior
+* Forecast performance demonstrated that historical sales behavior can be used effectively to anticipate short term future demand patterns
+
+The analysis also highlighted the importance of department level forecasting, as demand variability may differ substantially across retail categories.
+
+One important limitation of the dataset was the relatively limited forecasting horizon. Because the analysis did not span multiple full annual seasonal cycles, the model had limited ability to fully capture long-term holiday behavior and broader year over year demand dynamics.
+
+
+---
+
+## Recommendations
+
+Based on the findings, several operational recommendations could be explored to improve retail planning and forecasting insights:
+
+### Department-Level Operational Analysis
+
+Future analysis could include department-specific visualizations to identify:
+
+* Which departments require the highest inventory allocation
+* Which departments experience the greatest seasonal variability
+* Which product categories are most sensitive to demand fluctuations
+
+This would allow forecasting insights to support more targeted operational decision-making.
+
+### Staffing and Inventory Planning
+
+Observed lower-demand periods may present opportunities to:
+
+* Reduce staffing levels strategically
+* Adjust inventory purchasing schedules
+* Reallocate operational resources more efficiently
+
+Conversely, periods with elevated demand could be used to proactively:
+
+* Increase staffing coverage
+* Expand inventory allocation
+* Improve supply chain readiness
+
+### Expand Forecasting Horizon
+
+Future forecasting improvements could include:
+
+* Additional years of historical data
+* Multi-year seasonal trend analysis
+* More advanced recursive forecasting frameworks
+* Incorporation of external variables such as holidays, promotions, or economic indicators
+
+These additions could improve the model’s ability to capture long-term retail behavior and strengthen forecasting reliability during major shopping events.
