@@ -6,10 +6,7 @@ Walmart operates thousands of retail locations across the United States, making 
 
 The objective of the analysis was to better understand how retail demand fluctuates across time and departments in order to support operational decision making. Accurate forecasting can help retailers anticipate periods of increased or decreased demand, improving inventory allocation, staffing efficiency, pricing strategy, and overall customer experience.
 
-
-
-
-### Project Links
+<br>
 
 Full R code rmd file can be found [here](https://github.com/darianmiranda/Walmart-Retail-Sales-Forecast/blob/main/predictionportfolio.Rmd)
 
