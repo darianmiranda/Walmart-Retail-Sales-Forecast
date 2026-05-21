@@ -56,49 +56,45 @@ One important limitation of the dataset was the relatively limited forecasting h
 
 ## Recommendations
 
-Recommendations
+The forecasting results suggest that machine learning driven demand forecasting can support more proactive retail planning decisions across staffing, inventory allocation, and operational resource management. While the model demonstrated strong overall predictive performance, forecast variability across departments highlights opportunities for more targeted planning strategies and future forecasting improvements.
 
-The forecasting results suggest that machine learning-driven demand forecasting can support more proactive retail planning decisions across staffing, inventory allocation, and operational resource management. While the model demonstrated strong overall predictive performance, forecast variability across departments highlights opportunities for more targeted planning strategies and future forecasting improvements.
+### Short Term Staffing and Inventory Planning
 
-Short-Term Staffing and Inventory Planning
+Observed lower demand periods present opportunities to:
 
-Observed lower-demand periods may present opportunities to:
-
-Reduce staffing levels strategically
-Adjust inventory purchasing schedules
-Reallocate operational resources more efficiently
+* Reduce staffing levels strategically
+* Adjust inventory purchasing schedules
+* Reallocate operational resources more efficiently
 
 Conversely, periods with elevated demand could be used to proactively:
 
-Increase staffing coverage
-Expand inventory allocation
-Improve supply chain readiness
+* Increase staffing coverage
+* Expand inventory allocation
+* Improve supply chain readiness
 
 These adjustments may help reduce excess inventory costs while improving operational responsiveness during peak demand periods.
 
-Department-Specific Forecast Monitoring
+### Department Specific Forecast Monitoring
 
 Departments with consistently higher forecast error may benefit from additional operational oversight and more adaptive forecasting strategies. Elevated forecast variability may indicate departments that are more sensitive to seasonal demand shifts, promotions, or irregular purchasing behavior.
 
 Potential operational responses could include:
 
-More frequent forecast updates for volatile departments
-Department-specific inventory safety stock policies
-Additional monitoring during seasonal demand periods
-Separate forecasting approaches for highly variable product categories
+* More frequent forecast updates for volatile departments
+* Department specific inventory safety stock policies
+* Additional monitoring during seasonal demand periods
+* Separate forecasting approaches for highly variable product categories
 
 Targeted forecasting strategies may improve planning accuracy while reducing the operational risk associated with unpredictable demand patterns.
 
-Expand Forecasting Capabilities
+### Expand Forecasting Capabilities
 
 Future forecasting improvements could include:
 
-Additional years of historical data
-Multi-year seasonal trend analysis
-More advanced recursive forecasting frameworks
-Incorporation of external variables such as holidays, promotions, or economic indicators
+* Additional years of historical data
+* Multi year seasonal trend analysis
 
-These additions could improve the model’s ability to capture long-term retail behavior and strengthen forecasting reliability during major shopping events.
+These additions could improve the model’s ability to capture long term retail behavior and strengthen forecasting reliability during major shopping events.
 
 
 
