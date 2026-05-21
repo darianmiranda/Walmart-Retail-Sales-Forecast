@@ -8,11 +8,11 @@ The objective of the analysis was to better understand how retail demand fluctua
 
 <br>
 
-Full R code rmd file can be found [here](https://github.com/darianmiranda/Walmart-Retail-Sales-Forecast/blob/main/predictionportfolio.Rmd)
+Full R code rmd file can be found [here](https://github.com/darianmiranda/Walmart-Retail-Sales-Forecast/blob/main/Walmart-Retail-Sales-Forecast.Rmd)
 
 Full R code html file can be found [here](https://github.com/darianmiranda/Walmart-Retail-Sales-Forecast/blob/main/predictionportfolio.html)
 
-View the data [here](https://www.kaggle.com/datasets/yasserh/walmart-dataset)
+View the data [here](https://www.kaggle.com/datasets/aslanahmedov/walmart-sales-forecast)
 
 
 ---
@@ -89,3 +89,6 @@ Future forecasting improvements could include:
 * Incorporation of external variables such as holidays, promotions, or economic indicators
 
 These additions could improve the model’s ability to capture long-term retail behavior and strengthen forecasting reliability during major shopping events.
+
+<img width="2000" height="1200" alt="predictions_plot" src="https://github.com/user-attachments/assets/75d7d51a-70d7-4dc6-9e38-43f372b8c38a" />
+<img width="2000" height="1200" alt="dept_wape_distribution_plot" src="https://github.com/user-attachments/assets/22553f21-32e1-45e1-8cec-bdccd0fd7351" />
