@@ -10,7 +10,7 @@ The objective of the analysis was to better understand how retail demand fluctua
 
 Full R code rmd file can be found [here](https://github.com/darianmiranda/Walmart-Retail-Sales-Forecast/blob/main/Walmart-Retail-Sales-Forecast.Rmd)
 
-Full R code html file can be found [here](https://github.com/darianmiranda/Walmart-Retail-Sales-Forecast.html/blob/main/predictionportfolio.html)
+Full R code html file can be found [here](https://github.com/darianmiranda/Walmart-Retail-Sales-Forecast/blob/main/Walmart-Retail-Sales-Forecast.html)
 
 View the data [here](https://www.kaggle.com/datasets/aslanahmedov/walmart-sales-forecast)
 
