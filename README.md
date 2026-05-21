@@ -38,57 +38,67 @@ While the workflow captures forecasting structure, a fully recursive multi step 
 
 The final forecasting model achieved approximately <strong>8.4% WAPE</strong> on the test dataset, demonstrating strong predictive performance on unseen future sales observations.
 
+<img width="2000" height="1200" alt="predictions_plot" src="https://github.com/user-attachments/assets/75d7d51a-70d7-4dc6-9e38-43f372b8c38a" />
+
 Key findings from the analysis included:
 
-* Certain periods of the year showed noticeably lower operational demand, particularly during late April, late July, and mid to late September
-* Demand increased sharply before major US holidays, suggesting strong seasonal or event driven purchasing behavior
-* Forecast performance demonstrated that historical sales behavior can be used effectively to anticipate short term future demand patterns
+* Specific periods of the year showed noticeably lower operational demand, particularly during late April, late July, and mid to late September
+* Demand increased sharply before major US holiday Independence Day, suggesting strong seasonal or event driven purchasing behavior
+* Forecast performance demonstrates that historical sales behavior can be used effectively to anticipate short term future demand patterns
 
-The analysis also highlighted the importance of department level forecasting, as demand variability may differ substantially across retail categories.
+The analysis also highlighted the importance of department level forecasting, as demand variability may differ substantially across retail categories. The most difficult departments to forecast are shown below, with no reference table only department ID can be provided.
 
-One important limitation of the dataset was the relatively limited forecasting horizon. Because the analysis did not span multiple full annual seasonal cycles, the model had limited ability to fully capture long-term holiday behavior and broader year over year demand dynamics.
+<img width="2000" height="1200" alt="difficult_depts_plot" src="https://github.com/user-attachments/assets/85820436-dc86-44e6-91e4-570ef8ba7bdc" />
 
+One important limitation of the dataset was the relatively limited forecasting horizon. Because the analysis did not span multiple full annual seasonal cycles, the model had limited ability to fully capture long term holiday behavior and broader year over year demand dynamics.
 
 ---
 
 ## Recommendations
 
-Based on the findings, several operational recommendations could be explored to improve retail planning and forecasting insights:
+Recommendations
 
-### Department-Level Operational Analysis
+The forecasting results suggest that machine learning-driven demand forecasting can support more proactive retail planning decisions across staffing, inventory allocation, and operational resource management. While the model demonstrated strong overall predictive performance, forecast variability across departments highlights opportunities for more targeted planning strategies and future forecasting improvements.
 
-Future analysis could include department-specific visualizations to identify:
-
-* Which departments require the highest inventory allocation
-* Which departments experience the greatest seasonal variability
-* Which product categories are most sensitive to demand fluctuations
-
-This would allow forecasting insights to support more targeted operational decision-making.
-
-### Staffing and Inventory Planning
+Short-Term Staffing and Inventory Planning
 
 Observed lower-demand periods may present opportunities to:
 
-* Reduce staffing levels strategically
-* Adjust inventory purchasing schedules
-* Reallocate operational resources more efficiently
+Reduce staffing levels strategically
+Adjust inventory purchasing schedules
+Reallocate operational resources more efficiently
 
 Conversely, periods with elevated demand could be used to proactively:
 
-* Increase staffing coverage
-* Expand inventory allocation
-* Improve supply chain readiness
+Increase staffing coverage
+Expand inventory allocation
+Improve supply chain readiness
 
-### Expand Forecasting Horizon
+These adjustments may help reduce excess inventory costs while improving operational responsiveness during peak demand periods.
+
+Department-Specific Forecast Monitoring
+
+Departments with consistently higher forecast error may benefit from additional operational oversight and more adaptive forecasting strategies. Elevated forecast variability may indicate departments that are more sensitive to seasonal demand shifts, promotions, or irregular purchasing behavior.
+
+Potential operational responses could include:
+
+More frequent forecast updates for volatile departments
+Department-specific inventory safety stock policies
+Additional monitoring during seasonal demand periods
+Separate forecasting approaches for highly variable product categories
+
+Targeted forecasting strategies may improve planning accuracy while reducing the operational risk associated with unpredictable demand patterns.
+
+Expand Forecasting Capabilities
 
 Future forecasting improvements could include:
 
-* Additional years of historical data
-* Multi-year seasonal trend analysis
-* More advanced recursive forecasting frameworks
-* Incorporation of external variables such as holidays, promotions, or economic indicators
+Additional years of historical data
+Multi-year seasonal trend analysis
+More advanced recursive forecasting frameworks
+Incorporation of external variables such as holidays, promotions, or economic indicators
 
 These additions could improve the model’s ability to capture long-term retail behavior and strengthen forecasting reliability during major shopping events.
 
-<img width="2000" height="1200" alt="predictions_plot" src="https://github.com/user-attachments/assets/75d7d51a-70d7-4dc6-9e38-43f372b8c38a" />
-<img width="2000" height="1200" alt="dept_wape_distribution_plot" src="https://github.com/user-attachments/assets/22553f21-32e1-45e1-8cec-bdccd0fd7351" />
+
+
