@@ -1,4 +1,4 @@
-# Walmart Retail Sales Forecasting
+# Walmart Retail Sales Forecast
 
 ## Project Overview
 
